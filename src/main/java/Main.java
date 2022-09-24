@@ -39,8 +39,6 @@ public class Main {
 
         File file = new File("D:\\WorkPlace\\Курс по java\\НЕТОЛОГИЯ\\Модуль 4\\" + nameFile);
 
-        // TODO: 21.09.2022 дописать запись в файл текста
-
         try (FileOutputStream fos = new FileOutputStream(file)) {
             byte[] bytes = response2.getEntity().getContent().readAllBytes();
             fos.write(bytes, 0, bytes.length);
